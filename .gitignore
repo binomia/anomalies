@@ -1,5 +1,13 @@
 Packages/
+node_modules/
 data/
 fraud_detection.onnx
 package-lock.json
 build/
+request.http
+.DS_Store
+.dockerignore
+.env
+.gitignore
+.vscode/
+yarn.lock
