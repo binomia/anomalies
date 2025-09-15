@@ -4,6 +4,6 @@ import { triggers } from "./src/triggers";
 
 server.registerTriggerDefinition(triggers)
 
-server.start((url) => {
+server.start((url: string) => {
     console.log(`Server running at ${url}`);
 })
