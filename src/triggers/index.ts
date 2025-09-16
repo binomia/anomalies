@@ -1,5 +1,5 @@
 import { triggerDefinition, ServerTypes } from "cromio"
-import { iforest } from "../libs";
+import { iforest } from "@/libs";
 
 const triggers: ReturnType<typeof triggerDefinition> = triggerDefinition()
 

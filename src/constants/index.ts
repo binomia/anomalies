@@ -5,4 +5,4 @@ export const NODEMAILER_PASSWORD: string = process.env.NODEMAILER_PASSWORD || ""
 export const ZERO_ENCRYPTION_KEY: string = process.env.ZERO_ENCRYPTION_KEY || "";
 export const ZERO_SIGN_PRIVATE_KEY: string = process.env.ZERO_SIGN_PRIVATE_KEY || "";
 export const SENDGRID_API_KEY: string = process.env.SENDGRID_API_KEY || "";
-export const PORT: number = process.env.PORT ? Number(process.env.PORT) : 8003
+export const ANOMALY_SERVER_PORT: number = process.env.ANOMALY_SERVER_PORT ? Number(process.env.ANOMALY_SERVER_PORT) : 8003

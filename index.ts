@@ -1,5 +1,5 @@
-import { server } from "./src/server";
-import { triggers } from "./src/triggers";
+import { server } from "@/server";
+import { triggers } from "@/triggers";
 
 
 server.registerTriggerDefinition(triggers)

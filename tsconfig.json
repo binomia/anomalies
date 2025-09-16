@@ -4,10 +4,8 @@
     "moduleResolution": "NodeNext",
     "module": "nodenext",
     "target": "esnext",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [],   
+    "typeRoots": ["node_modules/@types"],
+    "types": [],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
@@ -19,6 +17,10 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
 }

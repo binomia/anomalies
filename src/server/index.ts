@@ -1,5 +1,5 @@
 import { Server, LANGUAGES, ServerTypes } from "cromio";
-import { PORT, ZERO_ENCRYPTION_KEY } from "../constants";
+import { ANOMALY_SERVER_PORT, ZERO_ENCRYPTION_KEY } from "@/constants";
 
 
 const clients: ServerTypes.ClientType[] = [
@@ -12,6 +12,6 @@ const clients: ServerTypes.ClientType[] = [
 
 
 export const server = new Server({
-    port: PORT,
+    port: ANOMALY_SERVER_PORT,
     clients
 })
