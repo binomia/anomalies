@@ -5,7 +5,6 @@
     "module": "nodenext",
     "target": "esnext",
     "typeRoots": ["node_modules/@types"],
-    "types": [],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
@@ -19,6 +18,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "baseUrl": "./",
+    "types": ["node"], 
     "paths": {
       "@/*": ["./src/*"]
     }

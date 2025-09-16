@@ -8,3 +8,5 @@ RUN npm install
 COPY . .
 
 RUN yarn build
+
+EXPOSE 8003
