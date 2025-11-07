@@ -19,6 +19,6 @@ if (cluster.isPrimary) {
     server.registerTriggerDefinition(triggers)
 
     server.start((url: string) => {
-        console.log(`Server running at http://localhost:8003`);
+        console.log(`Server running at ${url}`);
     })
 }
