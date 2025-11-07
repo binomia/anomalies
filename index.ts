@@ -18,7 +18,7 @@ if (cluster.isPrimary) {
     server.addExtension(Extensions.serverPrometheusMetrics({ port: 7003, defaultMetrics: true }));
     server.registerTriggerDefinition(triggers)
 
-    server.start((url: string) => {
-        console.log(`Server running at ${url}`);
+    server.start(() => {
+        console.log(`Server running at http://localhost:${8003}`);
     })
 }
