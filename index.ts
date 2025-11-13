@@ -1,6 +1,6 @@
-import { server } from "@/server";
-import { triggers } from "@/triggers";
-import { Extensions } from "cromio"
+import {server} from "@/server";
+import {triggers} from "@/triggers";
+import {Extensions} from "cromio"
 import cluster from "cluster";
 import os from "os";
 
@@ -15,7 +15,7 @@ if (cluster.isPrimary) {
     });
 
 } else {
-    server.addExtension(Extensions.serverPrometheusMetrics({ port: 7003, defaultMetrics: true }));
+    server.addExtension(Extensions.serverPrometheusMetrics({port: 7003, defaultMetrics: true}));
     server.registerTriggerDefinition(triggers)
 
     server.start(() => {
